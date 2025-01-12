@@ -1,13 +1,13 @@
 {
   "folders": [
-	{
-		"name": "textapp",
-		"path": "."
-	},
-	{
-		"name": "public",
-		"path": "../../../Desktop/textapp/public"
-	}
-],
+    {
+      "name": "textapp",
+      "path": "."
+    },
+    {
+      "name": "public",
+      "path": "../../../Desktop/textapp/public"
+    }
+  ],
   "settings": {}
 }
