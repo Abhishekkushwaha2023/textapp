@@ -36,7 +36,11 @@ function App() {
       ></Navbar>
       <Alert alert={alert} />
       <div className="container">
-        <TextForm heading="Enter the text to analyse" mode={mode} />
+        <TextForm
+          showAlert={showAlert}
+          heading="Enter the text to analyse"
+          mode={mode}
+        />
       </div>
     </>
   );

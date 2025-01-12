@@ -27,6 +27,7 @@ export default function TextForms(props) {
     //  console.log(text);
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+    props.showAlert("Removed extra space", "success ");
   };
   const [text, setText] = useState("");
   return (
