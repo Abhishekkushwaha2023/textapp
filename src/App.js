@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+
 import Navbar from "./Component/Navbar";
 import Alert from "./Component/Alert";
-import TextForm from "./Component/TextForms";
+import TextForms from "./Component/TextForms";
 import About from "./Component/About";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   const [mode, setMode] = useState("light");
@@ -17,6 +19,7 @@ function App() {
       setAlert(null);
     }, 1500);
   };
+
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
@@ -39,14 +42,15 @@ function App() {
           mode={mode}
           toggleMode={toggleMode}
         ></Navbar>
+        <Alert alert={alert} />
         <div>
           <Routes>
-            <Route exact path="/about" element={<About />}></Route>
+            <Route exact path="/about" element={<About mode={mode} />}></Route>
             <Route
               exact
               path="/"
               element={
-                <TextForm
+                <TextForms
                   heading="Enter text to analyze"
                   mode={mode}
                   showAlert={showAlert}
