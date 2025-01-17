@@ -51,7 +51,7 @@ function App() {
               path="/"
               element={
                 <TextForms
-                  heading="Enter text to analyze"
+                  heading="Try TextUtils -Word & Character Counter"
                   mode={mode}
                   showAlert={showAlert}
                 />

@@ -40,7 +40,10 @@ export default function TextForms(props) {
         className="container"
         style={{ color: props.mode === "dark" ? "white" : "black" }}
       >
-        <h1 style={{ color: props.mode === "dark" ? "white" : "black" }}>
+        <h1
+          className="mb-2"
+          style={{ color: props.mode === "dark" ? "white" : "black" }}
+        >
           {props.heading}
         </h1>
         <div className="mb-3">
