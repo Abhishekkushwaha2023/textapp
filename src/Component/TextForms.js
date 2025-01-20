@@ -87,11 +87,11 @@ export default function TextForms(props) {
         <h2>Your text have</h2>
         <p>
           {
-            text.split(" ").filter((element) => {
+            text.split(/\s+/).filter((element) => {
               return element.length !== 0;
             }).length
           }{" "}
-          Words and {text.length - text.split(/\s/).length + 1} Characters
+          Words and {text.length - text.split(/\s+/).length + 1} Characters
         </p>
         <p>
           {0.08 *
