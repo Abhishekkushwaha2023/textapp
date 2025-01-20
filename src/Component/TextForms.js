@@ -91,7 +91,7 @@ export default function TextForms(props) {
               return element.length !== 0;
             }).length
           }{" "}
-          Words and {text.length - text.split(" ").length + 1} Characters
+          Words and {text.length - text.split(/\s/).length + 1} Characters
         </p>
         <p>
           {0.08 *
